@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <audio src="audio/fireworks.mp3" controls autoplay hidden></audio>
+    <div id="firework-container"></div>
+    <audio id="background-audio">
+      <source src="audio/fireworks.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     <div class="paper heart">
     </div>
     <div class="paper">
@@ -45,5 +49,6 @@
     </div>
     <!-- javascript file -->
     <script src="script1.js"></script>
+    <script src="playsound.js"></script>
   </body>
 </html>
