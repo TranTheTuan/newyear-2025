@@ -1,120 +1,27 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
 body {
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-size: 1000px;
-  background-image: url("img/background3.jpg");
-  background-position: center center;
-}
-.paper {
-  background-image: url("img/background2.jpg");
-  background-size: 500px;
-  background-position: center center;
-  padding: 20px 100px;
-  transform: rotateZ(-5deg);
-  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
-  position: absolute;
-}
-.paper.heart {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  padding: 0;
-  border-radius: 50%;
-
-  cursor: pointer; /* Indicate interactivity */
-  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
 }
 
-.paper.heart:active {
-  transform: scale(0.95); /* Slightly shrink on click */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add a pressed effect */
+section {
+  width: 50%;
 }
 
-.paper.image {
-  display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center;    /* Center items horizontally */
-  justify-content: center; /* Optional: Center items vertically within the block */
-  padding: 10px;
+form {
+  margin: 2em;
 }
 
-.paper.image p {
-  margin: 0 0 10px; /* Add space between text and image */
-  /* font-size: 30px; */
+p::first-letter {
+  color: hotpink;
+  font-size: x-large;
 }
 
-img {
-  max-width: 100%;       /* Allow the image to scale proportionally within the container's width */
-  height: auto;          /* Maintain aspect ratio */
-  max-height: 300px;     /* Optional: Limit the image's height */
-  display: block;        /* Remove inline gaps around the image */
-  object-fit: contain;   /* Ensure the image fits within its container */
-  border-radius: 5%;
-}
-.paper.heart::after {
-  content: "";
-  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 150px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-}
-.paper.red {
-/*   filter: hue-rotate(90deg); */
-}
-.paper:nth-of-type(3n) {
-  background-position: left top;
-}
-.paper:nth-of-type(3n) {
-/*   filter: hue-rotate(200deg); */
-}
-p {
-  font-family: 'Dancing Script';
-  font-size: 50px;
-  color: rgb(245, 253, 8);
-  opacity: 0.75;
-  user-select: none;
-  
-}
-
-/* Firework container */
-#firework-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Allow clicks to pass through */
-  overflow: hidden;
-}
-
-/* Individual firework */
-.firework {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 0 0 10px 5px red, 0 0 20px 10px orange, 0 0 30px 15px yellow;
-  animation: explode 1s ease-out forwards;
-}
-
-/* Firework explosion animation */
-@keyframes explode {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(3);
-  }
+.broider {
+  /* Courtesy of https://maxbittker.github.io/broider/ */
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACQUlEQVR4Xu2cQW4CMRAE4Wd5Gk/Lz8g1mEOpNb1mtVSuvW6Pyz0GLGXvN/+qBO5VN81uAi2HQKC7gT4fv8//c94fPy+bQHq53rod1U/6WhAmlAxJrxMoG1L9pAt0IUDASBfobqC0I1OdOvbs/lTf2xlKA6a6QMNPdQIuUIFGXxPjlp8mjMav+jTxbT+qR6BLB9KGCzT8miRQIvBpoOmZQy0QrvdGfqR/er7T/ZYnYKQLNGxJgYaRIWCkh9PVjxhs+fRMTRd0tuenGybQ8MihAAhUoJSRmb695WflXn903PLXRzJboUBn/N5GC1SgZQJlOxMq0DKBsp0JFWiZQNnOhAq0TKBsZ0J3A6XLAtLL9dbtqH7S14IwoWRIep1A2ZDqJ12g4f2nQMMEEzDS44SuA9IJwvV9/PHp+vAMFejrP2nQjgs0PFMFSgR2A6UzhfRwPdsfp/pJjz+UyJD07YTCCal+0gUatrhAz57QsL6vfzz+2vT1xACAQMsJEahAywTKdiZUoGUCZTsTKtAygbKdCRVomUDZzoTuBkq3LaSX663bUf2ke33n9V09lC+GlEDSTejuhNKOTHXK29n9qb74nSNkSLpAfc3Qsa8ZogSSbkLLr+EhoKs+3aC2H9UTn6EEhCak8W0AbT9an0DLHSjQo4GmLUIt0G7xs8+Ht020ANIFevBPMwJMG0Q6+R/dgSa0/Fp5BJruaJqQsz0/7QCBhkccBUCgAqWMzPTtLT8r9/qj45a/PpLZCgU64/c2WqBloH/P1MCCUTjo+QAAAABJRU5ErkJggg==")
+      28 / 28px / 0 round;
+  border-width: 28px;
+  border-style: solid;
 }

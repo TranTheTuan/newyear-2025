@@ -1,54 +1,20 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Vũ Chinh Forever ❤️</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine</title>
+    <link rel="stylesheet" href="style.css"></link>
   </head>
   <body>
-    <div id="firework-container"></div>
-    <audio id="background-audio">
-      <source src="audio/fireworks.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <div class="paper heart">
-    </div>
-    <div class="paper">
-      <p>Năm mới hoan hỉ, </p>
-      <p> bỏ qua những việc không vui của năm cũ nhé 😍 </p>
-    </div>
-    <div class="paper image">
-      <p>Chúc em năm mới công việc hanh thông</p>
-      <p>dồi dào tài lộc.</p>
-      <img src="img/chinh4.jpg" />
-    </div>
-    <div class="paper image">
-      <p>Đa lộc, đa tài, đa phú quý</p>
-      <p>Đắc thời, đắc lợi, đắc nhân tâm</p>
-      <img src="img/totnghiep2.jpg" />
-    </div>
-    <div class="paper image">
-      <p>Làm ăn buôn bán đề huề</p>
-      <p>Gia đình sum họp tràn trề yêu thương</p>
-      <img src="img/giadinh2.jpg" />
-    </div>
-    <div class="paper image">
-      <p>Năm nay Ất Tỵ vừa sang </p>
-      <p>Chúc cho "rắn nhỏ" mãi càng ku-te<span
-          style="color: red !important;">🐍</span></p>
-      <img src="img/chinh3.jpg" />
-    </div>
-    <div class="paper">
-      <p class="p1">Happy new year 2025<span
-          style="color: red !important;">❤️</span></p>
-    </div>
-    <!-- javascript file -->
-    <script src="script1.js"></script>
-    <script src="playsound.js"></script>
+    <section class="broider">
+      <form onsubmit="event.preventDefault(); processCompliments();">
+          <label for="name">Nhập tên của bạn:</label>
+          <input type="text" id="name" name="name">
+          <input type="submit" value="Submit">
+      </form>
+      <h1>Tôi yêu bản thân mình vì tôi là...</h1>
+      <div id="compbox"></div>
+  </section>
+  <script src="script.js"></script>
   </body>
 </html>
